@@ -1,0 +1,163 @@
+---
+title: G1 Clone
+layout: base.njk
+---
+
+<div class="headline margin-top">
+
+    {%- for article in collections.article -%}
+        {% if article.data.type === 'highlight' %}
+            {% if loop.index === 1 %}
+                {% set headlineClass = 'main' %}
+            {% endif %}
+
+            {% if loop.index === 2 %}                            
+                {% set headlineClass = 'secondary' %}
+            {% endif %}
+
+            {% if loop.index === 3 %}            
+                {% set headlineClass = 'tertiary' %}
+            {% endif %}
+
+            <style>
+                .headline-{{headlineClass}} {
+                    background-image: url("{{ article.data.background }}");
+                }
+            </style>
+
+            <div class="headline-{{ headlineClass }}">
+                <a href="{{ article.url }}">
+                    <h4>{{ article.data.subtitle }}</h4>
+                    <div>
+                        <h1>
+                            {{ article.data.title }}
+                        </h1>
+                        <h3>
+                            {{ article.data.description }}
+                        </h3>
+                    </div>
+                </a>
+            </div>
+
+        {% endif %}
+
+    {%- endfor -%}
+
+</div>
+
+<div class="news margin-top">
+    <div class="news-main">
+
+        {%- for article in collections.article -%}
+
+            {% if article.data.type === 'main' %}
+
+                <div class="news-main__regular-container">
+                    {% if article.data.background %}
+                        <img class="news-main__regular-image image-desktop" src="{{ article.data.background }}">
+                    {% endif %}                    
+                    <div class="news-main__regular-item">
+                        <div class="news-main__regular-item-subtitle">
+                            <h4>{{ article.data.subtitle }}</h4>
+                        </div>
+                        <div class="news-main__regular-item-title">                                                    
+                            <a href={{ article.url}}>{{ article.data.title }}</a>
+                        </div>
+                        <div class="news-main__regular-content">
+                            {{ article.data.description }}
+                        </div>
+                        {% if article.data.background %}
+                            <img class="news-main__regular-image  image-mobile" src="{{ article.data.background }}">
+                        {% endif %}                        
+                        <ul class="news-main__regular-item-bullets">
+                            {% for rel in article.data.related %}
+                                <li>{{ rel }}</li>                                
+                            {% endfor %}
+                        </ul>
+                        <div class="news-main__regular-item-time">                        
+                            {{ article.data.time }} - {{ article.data.category }}
+                        </div>
+                    </div>
+                </div>
+
+            {% endif %}
+        
+        {%- endfor -%}
+        
+    </div>
+
+    <div class="news-sidebar">
+        <div class="news-siderbar-haveyouseen">
+            <div class="news-siderbar-haveyouseen__header">
+            <h4>Viu isso aqui?</h4>
+            </div>
+            <div class="news-siderbar-haveyouseen__main">
+            <div class="news-siderbar-haveyouseen__item">
+                <div class="news-siderbar-haveyouseen__item-content">
+                Joystick, 10 toneladas e fibra de carbono e titânio: como é o
+                submarino que sumiu em passeio para ver destroços do Titanic
+                </div>
+                <img src="https://s2.glbimg.com/YnXs1ZtaEm5LjbA3qBYaUDlaAFc=/94x94/top/smart/filters:max_age(3600)/https://s01.video.glbimg.com/deo/vi/49/46/11714649" class="news-siderbar-haveyouseen__item-image"></img>
+            </div>
+            <div class="news-siderbar-haveyouseen__divider"></div>
+            <div class="news-siderbar-haveyouseen__item">
+                <div class="news-siderbar-haveyouseen__item-content">
+                PM é investigado por agredir policiais femininas com ripa de
+                madeira durante curso tático no Ceará
+                </div>
+                <img src="https://s2.glbimg.com/82EEthvaZOiIK2dxUoKTzKTqzic=/94x94/top/smart/filters:max_age(3600)/https://s01.video.glbimg.com/deo/vi/99/47/11714799" class="news-siderbar-haveyouseen__item-image"></img>
+            </div>
+            <div class="news-siderbar-haveyouseen__divider"></div>
+            <div class="news-siderbar-haveyouseen__item">
+                <div class="news-siderbar-haveyouseen__item-content">
+                Homem cai em 'golpe do presente' e perde R$ 15 mil no litoral
+                de SP: 'me sinto até um idiota'; VÍDEO
+                </div>
+                <img src="https://s2.glbimg.com/ipsk5ZvU3LTrqcehldRe7FoKp-8=/94x94/top/smart/filters:max_age(3600)/https://s01.video.glbimg.com/deo/vi/13/32/11713213" class="news-siderbar-haveyouseen__item-image"></img>
+            </div>
+            </div>
+            <div class="news-siderbar-haveyouseen__footer">
+                <span>Mais conteúdos recomendados</span>
+            </div>
+        </div>
+
+
+        <div class="news-siderbar-haveyouseen margin-top">
+            <div class="news-siderbar-haveyouseen__header">
+            <h4>Deu o que falar...</h4>
+            </div>
+            <div class="news-siderbar-haveyouseen__main">
+            <div class="news-siderbar-haveyouseen__item">
+                <div class="news-siderbar-haveyouseen__item-content">
+                    Após ser dado como morto, homem perde Bolsa Família e passa fome
+                </div>
+                <img src="https://s2.glbimg.com/lRCntrrv9nY7z6cno7AneV8_A4A=/360x0:1081x721/94x94/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/l/F/RkOv6DTCKTBg4Svc3KhQ/jose-roberto2.jpg" class="news-siderbar-haveyouseen__item-image"></img>
+            </div>
+            <div class="news-siderbar-haveyouseen__item">
+                <div class="news-siderbar-haveyouseen__item-content">
+                    PRF 'descarregou fuzil', diz marido de mulher morta em blitz
+                </div>
+                <img src="https://s2.glbimg.com/jGCnKxJxwcQhnsgSp-AeuoGZt5o=/0x89:960x1049/94x94/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/A/y/GP6tIgRyqBxFzcfypDGA/whatsapp-image-2023-06-19-at-13.17.40.jpeg" class="news-siderbar-haveyouseen__item-image"></img>
+            </div>
+            <div class="news-siderbar-haveyouseen__item">
+                <div class="news-siderbar-haveyouseen__item-content">
+                    Homem que matou segurança para invadir balada brigou com cliente antes
+                </div>
+                <img src="https://s2.glbimg.com/VsqmFm_H_DSRs5UHojwFMt1-qnA=/20x57:462x499/94x94/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/R/T/fgtLxLS0aB0HAeiLIcZA/balada.jpg" class="news-siderbar-haveyouseen__item-image"></img>
+            </div>
+            </div>
+            <div class="news-siderbar-haveyouseen__footer">
+                <span>Mais Deu o que falar...</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
