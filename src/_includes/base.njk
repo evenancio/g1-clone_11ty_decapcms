@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="/main.css" />
   </head>
   <body>
-
-    {% include 'top-header.njk'%}
-    {% include 'main-header.njk'%}
+    {% include 'top-header.njk'%} {% include 'main-header.njk'%}
 
     <main class="main-container container-center">
-      {{content | safe}}
+      {{ content | safe }}
     </main>
 
     <footer></footer>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </body>
 </html>
