@@ -5,6 +5,7 @@ time: Há 1 minuto
 category: Economia
 type: highlight
 background: https://s2-g1.glbimg.com/HUOTJxyHi_wfxMKczC2G8rFV7v0=/0x0:1600x900/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/l/y/7LwlSfR7C18oH2KSTn5w/agressao-5.jpg
+order: 2
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Fames ac turpis egestas sed. Luctus accumsan tortor posuere ac ut consequat semper viverra nam. Sit amet venenatis urna cursus eget nunc. Augue ut lectus arcu bibendum at. Senectus et netus et malesuada. Consequat id porta nibh venenatis cras sed felis eget velit. Id ornare arcu odio ut sem nulla pharetra diam sit. Eget nunc lobortis mattis aliquam. Tempus quam pellentesque nec nam aliquam sem et. Laoreet sit amet cursus sit amet dictum sit amet justo. Pellentesque sit amet porttitor eget dolor morbi non arcu.

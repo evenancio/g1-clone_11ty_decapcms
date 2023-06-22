@@ -7,18 +7,18 @@ layout: base.njk
 
     {%- for article in collections.article -%}
         {% if article.data.type === 'highlight' %}
-            {% if loop.index === 1 %}
+            {% if article.data.order === 1 %}
                 {% set headlineClass = 'main' %}
             {% endif %}
 
-            {% if loop.index === 2 %}                            
+            {% if article.data.order === 2 %}                            
                 {% set headlineClass = 'secondary' %}
             {% endif %}
 
-            {% if loop.index === 3 %}            
+            {% if article.data.order === 3 %}            
                 {% set headlineClass = 'tertiary' %}
             {% endif %}
-
+        
             <style>
                 .headline-{{headlineClass}} {
                     background-image: url("{{ article.data.background }}");
