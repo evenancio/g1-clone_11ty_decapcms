@@ -162,6 +162,7 @@
   background-color: #fff;
   padding: 0 1.5rem;
   border: 1px solid #ddd;
+  border-radius: 0.6rem;
 }
 
 .headline-main a {
@@ -186,7 +187,6 @@
   background-size: cover;
   background-position: center;
   color: #fff;
-  border-radius: 0.6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -200,6 +200,7 @@
   height: 100%;
   background-position: center;
   background-size: cover;
+  border-radius: 0.6rem;
 }
 
 .headline-tertiary {
@@ -208,6 +209,7 @@
   height: 100%;
   background-position: center;
   background-size: cover;
+  border-radius: 0.6rem;
 }
 
 .headline-secondary h3,
