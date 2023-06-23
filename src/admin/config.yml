@@ -16,12 +16,5 @@ collections:
       - { label: 'Time', name: 'time', widget: 'string' }
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Image Link', name: 'background', widget: 'string' }
-      - { label: 'Section', name: 'type', widget: 'string' }
-      - { label: 'Order', name: 'order', widget: 'number' }
-      - {
-          label: 'Related Articles',
-          name: 'related',
-          widget: 'list',
-          default: ['article'],
-        }
+      - { label: 'Related Articles', name: 'related', widget: 'list' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

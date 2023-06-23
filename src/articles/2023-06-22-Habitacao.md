@@ -3,7 +3,6 @@ title: Minha Casa, Minha Vida passa a financiar imóveis de até R$ 350 mil
 subtitle: Habitação popular
 time: Há 2 horas
 category: Economia
-type: main
 related:
   - PIS/Pasep R$ 24 bilhões 'esquecidos' serão transferidos aos cofres do governo
 background: https://s2-g1.glbimg.com/KqJIlNVz0qqvCalHGnhqqZanITc=/0x0:799x449/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/e/j/TBCFllRm62pSQ4EyZq8A/a12fba664d4f6dae9f10c8b99075486e.jpg

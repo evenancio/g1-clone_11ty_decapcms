@@ -5,25 +5,31 @@ layout: base.njk
 
 <div class="headline margin-top">
 
-    {%- for article in collections.article -%}
-        {% if article.data.type === 'highlight' %}
-            {% if article.data.order === 1 %}
+    {%- for article in collections.article | reverse -%}
+        {% if loop.index <= 3 %}
+            {% if loop.index === 1 %}
                 {% set headlineClass = 'main' %}
             {% endif %}
 
-            {% if article.data.order === 2 %}                            
+            {% if loop.index === 2 %}
                 {% set headlineClass = 'secondary' %}
+                <style>
+                    .headline-{{headlineClass}} {
+                        background-image: url("{{ article.data.background }}");
+                    }
+                </style>
             {% endif %}
 
-            {% if article.data.order === 3 %}            
+            {% if loop.index === 3 %}            
                 {% set headlineClass = 'tertiary' %}
+                <style>
+                    .headline-{{headlineClass}} {
+                        background-image: url("{{ article.data.background }}");
+                    }
+                </style>
             {% endif %}
         
-            <style>
-                .headline-{{headlineClass}} {
-                    background-image: url("{{ article.data.background }}");
-                }
-            </style>
+
 
             <div class="headline-{{ headlineClass }}">
                 <a href="{{ article.url }}">
@@ -48,9 +54,9 @@ layout: base.njk
 <div class="news margin-top">
     <div class="news-main">
 
-        {%- for article in collections.article -%}
+        {%- for article in collections.article | reverse -%}
 
-            {% if article.data.type === 'main' %}
+            {% if loop.index > 3 %}
 
                 <div class="news-main__regular-container">
                     {% if article.data.background %}

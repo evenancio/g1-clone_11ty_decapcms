@@ -4,8 +4,6 @@ subtitle: Proteção da Amazônia
 description: Monitoramento de satélite da PF indica que território não registra novas áreas de exploração há mais de um mês.
 time: Há 1 minuto
 category: Economia
-type: highlight
-order: 1
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Fames ac turpis egestas sed. Luctus accumsan tortor posuere ac ut consequat semper viverra nam. Sit amet venenatis urna cursus eget nunc. Augue ut lectus arcu bibendum at. Senectus et netus et malesuada. Consequat id porta nibh venenatis cras sed felis eget velit. Id ornare arcu odio ut sem nulla pharetra diam sit. Eget nunc lobortis mattis aliquam. Tempus quam pellentesque nec nam aliquam sem et. Laoreet sit amet cursus sit amet dictum sit amet justo. Pellentesque sit amet porttitor eget dolor morbi non arcu.

@@ -4,7 +4,6 @@ subtitle: Julgamento de traficante
 description: 3 policiais morreram em 2009. Criminoso Fabiano Atanázio pegou 25 anos de prisão.
 time: Há 2 horas
 category: Economia
-type: main
 background: https://s2-g1.glbimg.com/xKGPZ28d0CtCaxhA7sQmLWwU1_w=/0x0:741x417/540x304/smart/filters:max_age(3600)/http://s01.video.glbimg.com/deo/vi/66/90/11719066
 ---
 

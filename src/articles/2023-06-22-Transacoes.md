@@ -3,7 +3,6 @@ title: Lula pede que Caixa suspenda cobrança de PIX para empresas
 subtitle: Transações taxadas
 time: Há 19 minutos
 category: Economia
-type: main
 background: https://s2-g1.glbimg.com/FAzyUNL3nv02rfqki6CRqxmKhwI=/0x62:600x400/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/3/n/7HEAstQNulO5cdSA3Nnw/caixa.png
 ---
 
